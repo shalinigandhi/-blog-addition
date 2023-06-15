@@ -1,0 +1,36 @@
+@import '../../styles/colors';
+
+.home-page-container {
+    .home-page-wrapper {
+        .heading {
+            font-size: 20px;
+            line-height: 16px;
+            margin-bottom: 50px;
+        }
+        .navigation-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .tabs-navigation-container {
+            display: flex;
+            align-items: center;
+
+            .tabs-navigation-list {
+                .tabs-navigation-link {
+                    font-weight: 600;
+                    padding: 5px 40px;
+                    cursor: pointer;
+                    color: $black-gradient2;
+                    border-bottom: 2px solid transparent;
+                    transition: 0.1s all ease-in-out;
+                    
+                    &.active {
+                        color: $orange;
+                        border-bottom: 2px solid $orange;
+                    }
+                }
+            }
+        }
+    }
+}

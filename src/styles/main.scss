@@ -15,3 +15,22 @@
         padding: 0 20px;
     }
 }
+
+.page-container {
+    padding: 50px 0;
+}
+
+.primary-btn {
+    background-color: $orange;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: $white;
+    display: flex;
+    align-items: center;
+
+    .btn-text {
+        margin-right: 4px;
+    }
+}
