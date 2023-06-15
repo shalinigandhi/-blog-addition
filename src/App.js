@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import AddTopic from './components/AddTopic/AddTopic';
 import WriteBlog from './components/WriteBlog/WriteBlog';
+import './styles/main.scss';
 
 function App() {
   return (
