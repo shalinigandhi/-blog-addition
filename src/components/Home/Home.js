@@ -2,6 +2,8 @@ import React from 'react'
 import { categories } from '../../data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom';
+import RecommendedTopics from '../RecommendedTopics/RecommendedTopics';
 import './home.scss';
 
 const Home = () => {
@@ -16,16 +18,21 @@ const Home = () => {
                             {
                                 categories.map((category, index) => (
                                     <li className="tabs-navigation-list" key={index} onClick={() => setActive(category)}>
-                                        <a className={"tabs-navigation-link" + (active ===  category ? " active" : '')}>{category}</a>
+                                        <a
+                                            className={"tabs-navigation-link" + (active === category ? " active" : '')}
+                                        >
+                                            {category}
+                                        </a>
                                     </li>
                                 ))
                             }
                         </ul>
-                        <button className="primary-btn">
+                        <NavLink to="/add-topic" className="primary-btn">
                             <span className="btn-text">Add Topic </span>
                             <FontAwesomeIcon icon={faAngleRight} style={{color: "#ffffff"}}/>
-                        </button>
+                        </NavLink>
                     </div>
+                    <RecommendedTopics />
                 </div>
             </div>
         </div>

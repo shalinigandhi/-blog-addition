@@ -1,0 +1,48 @@
+@import '../../styles/colors';
+
+.recommended-topics-container {
+    margin-top: 50px;
+    border: 1px solid #efefef;
+
+    h2 {
+        font-size: 12px;
+        padding: 10px 20px;
+        border-bottom: 1px solid #efefef;
+        background-color: #f9fbfc;
+        color: #53575e;
+        font-weight: 600;
+    }
+
+    .topics-wrapper {
+        .topic-list-container {
+            padding: 20px;
+            border-bottom: 1px solid #efefef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:last-of-type {
+                border: none;
+            }
+
+            .topic-name {
+                font-size: 14px;
+                color: $black-gradient2;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .topic-keyword {
+                margin-right: 10px;
+                border-radius: 4px;
+                font-size: 12px;
+                padding: 5px;
+                display: inline-block;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

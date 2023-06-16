@@ -22,12 +22,12 @@
                     padding: 5px 40px;
                     cursor: pointer;
                     color: $black-gradient2;
-                    border-bottom: 2px solid transparent;
+                    border-bottom: 4px solid transparent;
                     transition: 0.1s all ease-in-out;
                     
                     &.active {
                         color: $orange;
-                        border-bottom: 2px solid $orange;
+                        border-bottom: 4px solid $orange;
                     }
                 }
             }
