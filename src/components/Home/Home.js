@@ -19,6 +19,7 @@ const Home = () => {
                                 categories.map((category, index) => (
                                     <li className="tabs-navigation-list" key={index} onClick={() => setActive(category)}>
                                         <a
+                                            href="#"
                                             className={"tabs-navigation-link" + (active === category ? " active" : '')}
                                         >
                                             {category}
